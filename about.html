@@ -8,6 +8,14 @@
         <link rel="stylesheet" href="css/style.css">
         <link href="https://fonts.googleapis.com/icon?family=Material+Icons"rel="stylesheet">
         <meta name="viewport" content="width=device-width,initial-scale=1">
+
+        <link rel="apple-touch-icon" sizes="180x180" href="css/img/my.jpg">
+        <link rel="icon" type="image/png" sizes="32x32" href="css/img/my.jpg">
+        <link rel="icon" type="image/png" sizes="16x16" href="css/img/my.jpg">
+        <link rel="manifest" href="css/img/my.jpg">
+        <link rel="mask-icon" href="css/img/my.jpg" color="#5bbad5">
+        <meta name="msapplication-TileColor" content="#da532c">
+        <meta name="theme-color" content="#ffffff">
         <style>
             /*
     html5doctor.com Reset Stylesheet
@@ -154,10 +162,19 @@
         right: 5%;
         opacity: 1;
         }
+        .box-gray{
+            width: 40%;
+            height: 15%;
+            background-color: gray;
+            opacity: .4;
+            position: absolute;
+            top: 250px;
+            right: 10%;
+        }
     .plofile{
         font-size: 70px;
         font-weight: 600;
-        letter-spacing: 8px;
+        letter-spacing: 12px;
         color: gray;
         opacity: .4;
         z-index: -1;
@@ -183,6 +200,51 @@
     .name4 ul li:last-child{
         line-height: 24px;
     }
+
+    @media screen and (min-width: 960px) {
+  
+  main{
+      margin: 70px 20%;
+  }
+  .about-h1{
+      font-size: 80px;
+      padding: 10px 0 0 10%;
+  }
+  .boku{
+      font-size: 50px;
+  }
+  .about-my img{
+    width: 30%;
+    margin: 20px 12% 0 0;
+  }
+  .about-me{
+    width: 100%;
+    margin-top: 160px;
+  }
+  .about-me p{
+    font-size: 20px;
+    letter-spacing: 4px;
+  }
+  .name2{
+    width:240%;
+    line-height: 60px;
+    font-size: 24px;
+    letter-spacing: 8px;
+  }
+  .name4{
+    width: 100%;
+  }
+  .plofile{
+    font-size: 180px;
+    margin-top: 110px;
+  }
+  .box-gray{
+    width: 30%;
+    height: 220px;
+    margin: 120px 160px 0 0;
+  }
+
+}
         </style>
 </head>
 <body>
@@ -240,13 +302,15 @@
             </div>
             </section>
             
-            <section>
+            <section> 
+                    <div class="box-gray"></div>
                 <div class="about-me">
                     <p>小学校3年生から野球を始め、大学2年まで真剣に取り組んできました。そして今現在は、独学でプログラミング学習と体育教員免許取得の為の勉強をしています。</p>
                     <p>体育会系なので、熱意と元気は負けません。満足ができる, 結果が出るサイト制作を目指しています。</p>
                 </div>
                 <div class="about-my">
                     <img src="css/img/yuya.jpg" alt="">
+                    
                 </div>
             </section>
 
@@ -282,7 +346,7 @@
         <footer class="footer">
             <img src="css/img/My.Labo Logo.png" alt="">
                 <h2>Yuya Matsukura</h2>
-<!--                 <p>
+                <!-- <p>
                     <span class="material-icons">phone</span>
                     080-5729-2592
                 </p> -->
@@ -291,4 +355,3 @@
 <script src="js/main.js"></script>
 </body>
 </html>
- 
