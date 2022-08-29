@@ -1,8 +1,6 @@
-body{
     margin: 0;
     font-family: unset;
 }
-
 .header{
     background-position: center;
     background-size: cover;
@@ -40,7 +38,7 @@ li {
 
 /* ヘッダー */
 .header {
-  background-color: white;
+  background-color: rgb(255, 255, 255);
   width: 100%;
   height: 50px;
   position: fixed;
@@ -87,7 +85,7 @@ li {
   left: 0;
   top: 0;
   width: 100%;
-  height: 100vh;
+  height: 120vh;
   transform: translateX(100%);
   background-color: #fff;
   transition: ease 1.6s;
@@ -98,11 +96,11 @@ li {
   .header__nav {
     position: static;
     transform: initial;
-    background-color: inherit;
+    /* background-color: inherit; */
     height: inherit;
     display: flex;
-    justify-content: end;
-    width: 50%;
+    /* justify-content: end; */
+    width: 80%;
   }
 }
 
@@ -113,7 +111,8 @@ li {
     display: flex;
     align-items: center;
     height: initial;
-    justify-content: space-between;
+    /* justify-content: space-between; */
+
   }
 }
 
@@ -136,6 +135,12 @@ li {
     left: 0;
     transform: translate(0, 0);
   }
+  .nav-items a:hover{
+    background-color: rgb(216, 216, 216);
+    font-size: 26px;
+    transition: .5s;
+    border-radius: 4px;
+  }
 }
 
 .nav-items__item a {
@@ -145,8 +150,10 @@ li {
   text-align: center;
   font-size: 28px;
   margin: 0 auto 24px;
-    border-bottom: 2px black solid;
+  border-bottom: 2px black solid;
   width: 70%;
+  padding: 10px;
+  
 }
 .nav-items__item span{
     font-size: 12px;
@@ -160,6 +167,7 @@ li {
 @media screen and (min-width: 960px) {
   .nav-items__item a {
     margin-bottom: 0;
+    letter-spacing: 4px;
   }
 }
 
@@ -227,7 +235,7 @@ li {
 } 
 #js-nav img{
   width: 70%;
-  transform: translateY(-80px);
+  transform: translateY(-120px);
   display: block;
   margin: 0 auto;
 }
@@ -240,16 +248,21 @@ li {
     height: auto;
     opacity: .5;
     display: block;
+    z-index: 100;
 }
 .contain{
     position: relative;
     background: black;
+    height: 506px;
 }
 .main-contents p{
     position: absolute;
     bottom: 40px;
     left: 20px;
     font-size: 20px;
+}
+#bcgd2{
+  opacity: 0;
 }
 
 
@@ -266,6 +279,9 @@ li {
 .message{
     position: absolute;
     bottom: 40px;
+}
+.message1{
+  display: none;
 }
 /* カルーセル */
 
@@ -414,7 +430,7 @@ li {
     color: #fff;
     margin-top: 60px;
     position: relative;
-    height: 160px;
+    height: auto;
 }
 footer h2{
   position: absolute;
@@ -440,4 +456,69 @@ footer img{
 .line{
   margin-top: -50px;
   /* margin-right: 10%; */
+}
+
+@media screen and (min-width: 960px) {
+  .header__inner{
+    height: 80px;
+    background: #fff;
+  }
+  .header__nav a{
+    font-size: 20px;
+    margin-right: 50px;
+  }
+  .header__nav ol li{
+    margin-right: 20px;
+  }
+  #bcgd1{
+    display: none
+  }
+  #bcgd2{
+    opacity: .6;
+  }
+  .message p{
+    font-size: 30px;
+    width: 80%;
+    line-height: 74px;
+    color: rgb(255, 255, 255);
+  }
+.contain img,
+.contain{
+  height: 700px;
+  margin-bottom: 100px;
+}
+  section div{
+    width: 70%;
+    margin: 0 auto;
+  }
+  .copy-flex {
+    display: flex;
+  }
+  .container2 ul{
+    width: 800px;
+    margin: 0 auto;
+  }
+  #calsel{
+    width: 52%;
+    margin: 0 auto;
+  }
+  .copy-flex img{
+    height: 200px;
+  }
+  #mosya img{
+    width: 100%;
+    height: 50%;
+  }
+  .con2-p{
+    text-align: center;
+  }
+  .footer h2{
+    font-size: 48px;
+    padding: 50px 100px;
+    letter-spacing: 10px;
+  }
+  .footer img{
+    width: 30%;
+    padding-left: 120px;
+  }
 }
